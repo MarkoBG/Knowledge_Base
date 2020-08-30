@@ -9,6 +9,14 @@
 import UIKit
 
 class TimedMultiplayerVC: UIViewController {
-    @IBOutlet private weak var timeBar: TimeBarViewController?
-    @IBOutlet private weak var players: MultipayerScoreVC?
+    private(set) var timeBar: TimeBarViewController?
+    private(set) var players: MultipayerScoreVC?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TimeBar", let vc = segue.destination as? TimeBarViewController {
+            timeBar = vc
+        } else if segue.identifier == "Players", let vc = segue.destination as? MultipayerScoreVC {
+            players = vc
+        }
+    }
 }

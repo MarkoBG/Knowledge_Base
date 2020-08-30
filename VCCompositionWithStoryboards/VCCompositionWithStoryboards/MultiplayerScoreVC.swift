@@ -9,6 +9,14 @@
 import UIKit
 
 class MultipayerScoreVC: UIViewController {
-    @IBOutlet private weak var playerOne: PlayerScoreViewController?
-    @IBOutlet private weak var playerTwo: PlayerScoreViewController?
+    private(set) var playerOne: PlayerScoreViewController?
+    private(set) var playerTwo: PlayerScoreViewController?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PlayerOne", let vc = segue.destination as? PlayerScoreViewController {
+            playerOne = vc
+        } else if segue.identifier == "PlayerTwo", let vc = segue.destination as? PlayerScoreViewController {
+            playerTwo = vc
+        }
+    }
 }

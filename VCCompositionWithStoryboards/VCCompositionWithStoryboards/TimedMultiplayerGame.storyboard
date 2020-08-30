@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="65" id="0M2-nL-fDQ"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="Zwy-7w-RZn" kind="embed" id="RXf-0h-Oiw"/>
+                                    <segue destination="Zwy-7w-RZn" kind="embed" identifier="Players" id="RXf-0h-Oiw"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-ww-LWh" userLabel="Bar View">
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="10" id="O8u-io-KUV"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="l1G-fn-HyS" kind="embed" id="vyc-OS-kf2"/>
+                                    <segue destination="l1G-fn-HyS" kind="embed" identifier="TimeBar" id="vyc-OS-kf2"/>
                                 </connections>
                             </containerView>
                         </subviews>

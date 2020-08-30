@@ -9,5 +9,11 @@
 import UIKit
 
 class MultiplayerVC: UIViewController {
-    @IBOutlet private weak var players: MultipayerScoreVC?
+    private(set) var players: MultipayerScoreVC?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Players", let vc = segue.destination as? MultipayerScoreVC {
+            players = vc
+        }
+    }
 }
