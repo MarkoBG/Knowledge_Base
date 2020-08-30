@@ -31,28 +31,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pug-aw-4NB">
-                                <rect key="frame" x="234" y="0.0" width="180" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="di0-yD-QbF"/>
-                                </constraints>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pug-aw-4NB" userLabel="Player Two">
+                                <rect key="frame" x="224" y="0.0" width="190" height="65"/>
                                 <connections>
                                     <segue destination="yZX-2F-F6t" kind="embed" id="2RG-fN-yaE"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-K7-K64">
-                                <rect key="frame" x="0.0" y="0.0" width="180" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="ejY-TE-zaR"/>
-                                </constraints>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-K7-K64" userLabel="Player One">
+                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="65"/>
                                 <connections>
                                     <segue destination="ezg-iH-gRk" kind="embed" id="wh9-oO-vzk"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-yC-FFv">
+                                <rect key="frame" x="198.5" y="19.5" width="17.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Pug-aw-4NB" firstAttribute="top" secondItem="oXr-bR-tlm" secondAttribute="top" id="Dgd-BM-uBF"/>
+                            <constraint firstItem="UrE-yC-FFv" firstAttribute="centerY" secondItem="Dmk-qj-GZ8" secondAttribute="centerY" id="E5k-FG-ZTE"/>
+                            <constraint firstItem="UrE-yC-FFv" firstAttribute="centerX" secondItem="Dmk-qj-GZ8" secondAttribute="centerX" id="FyR-CK-L1r"/>
+                            <constraint firstItem="Pug-aw-4NB" firstAttribute="leading" secondItem="UrE-yC-FFv" secondAttribute="trailing" constant="8" id="OG6-Ve-bN1"/>
+                            <constraint firstItem="GwR-K7-K64" firstAttribute="trailing" secondItem="UrE-yC-FFv" secondAttribute="leading" constant="-8" id="OxZ-y6-poh"/>
                             <constraint firstItem="GwR-K7-K64" firstAttribute="leading" secondItem="oXr-bR-tlm" secondAttribute="leading" id="ncM-Du-Vwg"/>
                             <constraint firstAttribute="bottom" secondItem="Pug-aw-4NB" secondAttribute="bottom" id="oKu-9Z-pbT"/>
                             <constraint firstItem="Pug-aw-4NB" firstAttribute="trailing" secondItem="oXr-bR-tlm" secondAttribute="trailing" id="obR-PN-SON"/>
