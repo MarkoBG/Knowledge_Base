@@ -8,12 +8,9 @@
 
 import UIKit
 
-class MultiplayerVC: UIViewController {
+final class PlayerView: UIView {
     @IBOutlet private weak var nameLabel: UILabel?
     @IBOutlet private weak var scoreLabel: UILabel?
-    
-    @IBOutlet private weak var p2nameLabel: UILabel?
-    @IBOutlet private weak var p2scoreLabel: UILabel?
     
     var name: String? {
         set { nameLabel?.text = newValue }
@@ -24,14 +21,9 @@ class MultiplayerVC: UIViewController {
         set { scoreLabel?.text = newValue }
         get { return scoreLabel?.text }
     }
-    
-    var p2Name: String? {
-        set { p2nameLabel?.text = newValue }
-        get { return p2nameLabel?.text }
-    }
+}
 
-    var p2Score: String? {
-        set { p2scoreLabel?.text = newValue }
-        get { return p2scoreLabel?.text }
-    }
+class MultiplayerVC: UIViewController {
+    @IBOutlet private weak var playerOne: PlayerView?
+    @IBOutlet private weak var playerTwo: PlayerView?
 }
