@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rks-xd-16m">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MultiplayerScore-->
+        <scene sceneID="vPP-5n-ryX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MultiplayerScore" id="Zwy-7w-RZn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJc-eD-HZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="-223"/>
+        </scene>
+        <!--Time Game-->
+        <scene sceneID="GKq-AO-7oc">
+            <objects>
+                <viewController id="Rks-xd-16m" customClass="MultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q1R-t3-KJ7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBc-AM-JXH">
+                                <rect key="frame" x="8" y="70" width="398" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0M2-nL-fDQ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Zwy-7w-RZn" kind="embed" id="RXf-0h-Oiw"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-ww-LWh" userLabel="Bar View">
+                                <rect key="frame" x="8" y="52" width="398" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="O8u-io-KUV"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="l1G-fn-HyS" kind="embed" id="vyc-OS-kf2"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fBc-AM-JXH" firstAttribute="top" secondItem="Fhv-ww-LWh" secondAttribute="bottom" constant="8" id="205-3z-x9j"/>
+                            <constraint firstItem="JOE-ge-3UP" firstAttribute="trailing" secondItem="fBc-AM-JXH" secondAttribute="trailing" constant="8" id="Rgx-N6-nm2"/>
+                            <constraint firstItem="Fhv-ww-LWh" firstAttribute="leading" secondItem="JOE-ge-3UP" secondAttribute="leading" constant="8" id="V2k-7l-o9f"/>
+                            <constraint firstItem="JOE-ge-3UP" firstAttribute="trailing" secondItem="Fhv-ww-LWh" secondAttribute="trailing" constant="8" id="biX-JS-uia"/>
+                            <constraint firstItem="Fhv-ww-LWh" firstAttribute="top" secondItem="JOE-ge-3UP" secondAttribute="top" constant="8" id="nGm-YE-aiO"/>
+                            <constraint firstItem="fBc-AM-JXH" firstAttribute="leading" secondItem="JOE-ge-3UP" secondAttribute="leading" constant="8" id="xEK-af-xvl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JOE-ge-3UP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Time Game" id="Mgo-qi-ofR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9tE-ah-IUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="161"/>
+        </scene>
+        <!--TimeBar-->
+        <scene sceneID="AiQ-2u-bbs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeBar" id="l1G-fn-HyS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="siL-98-xmL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="-224"/>
+        </scene>
+    </scenes>
+</document>

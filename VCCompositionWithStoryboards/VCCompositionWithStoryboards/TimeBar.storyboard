@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0xX-iJ-slE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Bar View Controller-->
+        <scene sceneID="XlC-Mz-2Ik">
+            <objects>
+                <viewController id="0xX-iJ-slE" customClass="TimeBarViewController" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6M-Fu-Uzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eth-vw-vYh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BWd-8f-bwi" firstAttribute="trailing" secondItem="eth-vw-vYh" secondAttribute="trailing" id="415-3a-CCQ"/>
+                            <constraint firstItem="eth-vw-vYh" firstAttribute="top" secondItem="j6M-Fu-Uzc" secondAttribute="top" id="HVi-ke-kIi"/>
+                            <constraint firstAttribute="bottom" secondItem="eth-vw-vYh" secondAttribute="bottom" id="NMi-do-uhC"/>
+                            <constraint firstItem="eth-vw-vYh" firstAttribute="leading" secondItem="BWd-8f-bwi" secondAttribute="leading" id="WAZ-TE-iFP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BWd-8f-bwi"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="10"/>
+                    <connections>
+                        <outlet property="barView" destination="eth-vw-vYh" id="No7-YZ-DzN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1T-cL-WPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>

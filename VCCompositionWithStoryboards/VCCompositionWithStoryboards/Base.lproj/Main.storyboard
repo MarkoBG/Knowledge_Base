@@ -18,6 +18,7 @@
                     <connections>
                         <segue destination="r6R-YP-7qB" kind="relationship" relationship="viewControllers" id="vrn-9k-i4W"/>
                         <segue destination="Rvq-Xi-atr" kind="relationship" relationship="viewControllers" id="AKL-zj-NHS"/>
+                        <segue destination="8UX-Pz-cgN" kind="relationship" relationship="viewControllers" id="gBb-Fk-tnU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpS-uU-w6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,7 +33,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWB-ZV-Uor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308" y="-623"/>
+            <point key="canvasLocation" x="261" y="-598"/>
         </scene>
         <!--MultyplayerGame-->
         <scene sceneID="hJC-Ir-NTj">
@@ -42,7 +43,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMC-2j-X6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285" y="-253"/>
+            <point key="canvasLocation" x="259" y="-413"/>
+        </scene>
+        <!--TimedMultiplayerGame-->
+        <scene sceneID="sxs-oI-jfc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimedMultiplayerGame" id="8UX-Pz-cgN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ay6-Y2-x0g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwO-YU-RWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-225"/>
         </scene>
     </scenes>
 </document>

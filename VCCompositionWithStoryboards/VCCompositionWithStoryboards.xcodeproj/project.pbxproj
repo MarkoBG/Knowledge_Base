@@ -21,6 +21,9 @@
 		EF98108724FBCFF900158C42 /* SinglePlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108624FBCFF900158C42 /* SinglePlayerGame.storyboard */; };
 		EF98108924FBD23F00158C42 /* MultyplayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */; };
 		EF98108B24FBD56900158C42 /* MultiplayerScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */; };
+		EF98108D24FBD88500158C42 /* TimedMultiplayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */; };
+		EF98108F24FBD8AA00158C42 /* TimeBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */; };
+		EF98109124FBD92C00158C42 /* TimeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98109024FBD92C00158C42 /* TimeBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		EF98108624FBCFF900158C42 /* SinglePlayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SinglePlayerGame.storyboard; sourceTree = "<group>"; };
 		EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultyplayerGame.storyboard; sourceTree = "<group>"; };
 		EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiplayerScore.storyboard; sourceTree = "<group>"; };
+		EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimedMultiplayerGame.storyboard; sourceTree = "<group>"; };
+		EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeBar.storyboard; sourceTree = "<group>"; };
+		EF98109024FBD92C00158C42 /* TimeBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				EF98108024FBCB8500158C42 /* PlayerOne.storyboard */,
 				EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */,
 				EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */,
+				EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */,
+				EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */,
+				EF98109024FBD92C00158C42 /* TimeBarViewController.swift */,
 				EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */,
 				EF98108224FBCD7300158C42 /* PlayerTwo.storyboard */,
 				EF98106524FBBF1E00158C42 /* Assets.xcassets */,
@@ -202,11 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF98106924FBBF1E00158C42 /* LaunchScreen.storyboard in Resources */,
+				EF98108F24FBD8AA00158C42 /* TimeBar.storyboard in Resources */,
 				EF98108724FBCFF900158C42 /* SinglePlayerGame.storyboard in Resources */,
 				EF98108924FBD23F00158C42 /* MultyplayerGame.storyboard in Resources */,
 				EF98106624FBBF1E00158C42 /* Assets.xcassets in Resources */,
 				EF98108124FBCB8500158C42 /* PlayerOne.storyboard in Resources */,
 				EF98106424FBBF0B00158C42 /* Main.storyboard in Resources */,
+				EF98108D24FBD88500158C42 /* TimedMultiplayerGame.storyboard in Resources */,
 				EF98108B24FBD56900158C42 /* MultiplayerScore.storyboard in Resources */,
 				EF98108324FBCD7300158C42 /* PlayerTwo.storyboard in Resources */,
 			);
@@ -231,6 +242,7 @@
 				EF98105F24FBBF0B00158C42 /* SceneDelegate.swift in Sources */,
 				EF98108524FBCE6300158C42 /* PlayerScoreViewController.swift in Sources */,
 				EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */,
+				EF98109124FBD92C00158C42 /* TimeBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
