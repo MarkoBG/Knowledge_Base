@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Axt-kc-cRL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayerOne-->
+        <scene sceneID="ZAA-93-6ai">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerOne" id="3qa-OH-Ydh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flf-Rr-d0t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="-223"/>
+        </scene>
+        <!--PlayerTwo-->
+        <scene sceneID="XXi-3T-xDF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerTwo" id="IMU-cu-CsX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q8-wN-iew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-225"/>
+        </scene>
+        <!--MultiplayerVC-->
+        <scene sceneID="tVe-La-Ovr">
+            <objects>
+                <viewController id="Axt-kc-cRL" customClass="MultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oYd-0g-1bL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZL-Qa-KwM">
+                                <rect key="frame" x="226" y="52" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="2Mg-zN-YnH"/>
+                                    <constraint firstAttribute="height" constant="65" id="x75-Hg-SUW"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="IMU-cu-CsX" kind="embed" id="Ewr-OA-yRg"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-iU-rlO">
+                                <rect key="frame" x="8" y="52" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="a1o-f0-u0I"/>
+                                    <constraint firstAttribute="width" constant="180" id="w4C-Ol-uDD"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="3qa-OH-Ydh" kind="embed" id="vnt-6a-UKY"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HNC-iU-rlO" firstAttribute="top" secondItem="vRl-ck-0rQ" secondAttribute="top" constant="8" id="5zJ-jv-IZ9"/>
+                            <constraint firstItem="HNC-iU-rlO" firstAttribute="leading" secondItem="oYd-0g-1bL" secondAttribute="leading" constant="8" id="8wX-WY-bKv"/>
+                            <constraint firstItem="LZL-Qa-KwM" firstAttribute="top" secondItem="vRl-ck-0rQ" secondAttribute="top" constant="8" id="sPR-06-seI"/>
+                            <constraint firstItem="LZL-Qa-KwM" firstAttribute="trailing" secondItem="oYd-0g-1bL" secondAttribute="trailing" constant="-8" id="xgb-io-uf7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vRl-ck-0rQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfY-WW-SUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="161"/>
+        </scene>
+    </scenes>
+</document>

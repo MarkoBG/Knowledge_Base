@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +17,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="r6R-YP-7qB" kind="relationship" relationship="viewControllers" id="vrn-9k-i4W"/>
-                        <segue destination="Ssi-Hw-b9U" kind="relationship" relationship="viewControllers" id="Jmc-Rd-9zv"/>
+                        <segue destination="Rvq-Xi-atr" kind="relationship" relationship="viewControllers" id="AKL-zj-NHS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EpS-uU-w6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -35,94 +34,15 @@
             </objects>
             <point key="canvasLocation" x="308" y="-623"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="RD9-BA-DPd">
+        <!--MultyplayerGame-->
+        <scene sceneID="hJC-Ir-NTj">
             <objects>
-                <viewController id="Ssi-Hw-b9U" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="34G-t3-CMh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bZb-Zc-uuF">
-                                <rect key="frame" x="8" y="52" width="398" height="60"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNV-bA-Gbz">
-                                        <rect key="frame" x="0.0" y="0.0" width="196.5" height="60"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Dkn-31-m9F">
-                                                <rect key="frame" x="8" y="8" width="96" height="44"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-eE-6SM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqb-5s-8P4">
-                                                        <rect key="frame" x="0.0" y="23.5" width="96" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Dkn-31-m9F" firstAttribute="leading" secondItem="dNV-bA-Gbz" secondAttribute="leading" constant="8" id="ER3-0H-us6"/>
-                                            <constraint firstItem="Dkn-31-m9F" firstAttribute="top" secondItem="dNV-bA-Gbz" secondAttribute="top" constant="8" id="Jpd-w7-eJ7"/>
-                                            <constraint firstItem="Dkn-31-m9F" firstAttribute="leading" secondItem="dNV-bA-Gbz" secondAttribute="leading" constant="8" id="NZz-RI-wrH"/>
-                                            <constraint firstAttribute="height" constant="60" id="uIl-WG-Js1"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5D-xP-opI">
-                                        <rect key="frame" x="201.5" y="0.0" width="196.5" height="60"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8Ej-7t-caT">
-                                                <rect key="frame" x="8" y="8" width="180.5" height="44"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVS-y1-Enh">
-                                                        <rect key="frame" x="84.5" y="0.0" width="96" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-O3-F8G">
-                                                        <rect key="frame" x="135" y="23.5" width="45.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="8Ej-7t-caT" secondAttribute="trailing" constant="8" id="0hw-BG-yqU"/>
-                                            <constraint firstItem="8Ej-7t-caT" firstAttribute="top" secondItem="e5D-xP-opI" secondAttribute="top" constant="8" id="BJs-5d-LxO"/>
-                                            <constraint firstItem="8Ej-7t-caT" firstAttribute="leading" secondItem="e5D-xP-opI" secondAttribute="leading" constant="8" id="GEp-3s-Khr"/>
-                                            <constraint firstAttribute="height" constant="60" id="bIV-RC-JAk"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="iVu-dd-fnl"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bZb-Zc-uuF" secondAttribute="trailing" constant="8" id="ctQ-81-CLt"/>
-                            <constraint firstItem="bZb-Zc-uuF" firstAttribute="top" secondItem="J64-xJ-MUI" secondAttribute="top" constant="8" id="nQe-dv-XPy"/>
-                            <constraint firstItem="bZb-Zc-uuF" firstAttribute="leading" secondItem="34G-t3-CMh" secondAttribute="leading" constant="8" id="vwz-3b-NcQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="J64-xJ-MUI"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nXs-CZ-ZPe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HUd-OZ-48e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MultyplayerGame" id="Rvq-Xi-atr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3am-4A-8cU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMC-2j-X6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-124"/>
+            <point key="canvasLocation" x="285" y="-253"/>
         </scene>
     </scenes>
 </document>
