@@ -10,6 +10,5 @@ import UIKit
 
 class TimedMultiplayerVC: UIViewController {
     @IBOutlet private weak var timeBar: TimeBarViewController?
-    @IBOutlet private weak var playerOne: PlayerScoreViewController?
-    @IBOutlet private weak var playerTwo: PlayerScoreViewController?
+    @IBOutlet private weak var players: MultipayerScoreVC?
 }

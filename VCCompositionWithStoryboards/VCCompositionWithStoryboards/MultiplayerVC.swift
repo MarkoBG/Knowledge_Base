@@ -9,6 +9,5 @@
 import UIKit
 
 class MultiplayerVC: UIViewController {
-    @IBOutlet private weak var playerOne: PlayerScoreViewController?
-    @IBOutlet private weak var playerTwo: PlayerScoreViewController?
+    @IBOutlet private weak var players: MultipayerScoreVC?
 }
