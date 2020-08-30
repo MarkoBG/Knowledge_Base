@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MultipayerScoreVC: UIViewController {
+class MultiplayerScoreVC: UIViewController {
     private(set) var playerOne: PlayerScoreViewController?
     private(set) var playerTwo: PlayerScoreViewController?
     

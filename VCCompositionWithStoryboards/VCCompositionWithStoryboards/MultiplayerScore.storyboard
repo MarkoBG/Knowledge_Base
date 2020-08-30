@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="248" y="-225"/>
         </scene>
-        <!--Multipayer ScoreVC-->
+        <!--Multiplayer ScoreVC-->
         <scene sceneID="LWF-bJ-MnY">
             <objects>
-                <viewController id="WsR-fr-ZUW" customClass="MultipayerScoreVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WsR-fr-ZUW" customClass="MultiplayerScoreVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oXr-bR-tlm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
