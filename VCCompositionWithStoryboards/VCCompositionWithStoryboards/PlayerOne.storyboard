@@ -54,6 +54,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="65"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Qk8-CL-tw2" id="Fam-3E-0QO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrb-Ni-h3h" sceneMemberID="firstResponder"/>
             </objects>

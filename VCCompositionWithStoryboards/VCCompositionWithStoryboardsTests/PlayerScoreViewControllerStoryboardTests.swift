@@ -15,4 +15,14 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
         let storyboard = UIStoryboard(name: "PlayerOne", bundle: nil)
         XCTAssertTrue(storyboard.instantiateInitialViewController() is PlayerScoreViewController)
     }
+    
+    func test_playerOneStoryboard_name_isSettable() {
+        let storyboard = UIStoryboard(name: "PlayerOne", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! PlayerScoreViewController
+        _ = vc.view
+        let name = "Test"
+        vc.name = name
+        
+        XCTAssertTrue(vc.name == name, "Expected name \(name) got \(vc.name!)")
+    }
 }
