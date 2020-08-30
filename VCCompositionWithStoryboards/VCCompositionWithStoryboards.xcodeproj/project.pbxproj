@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		EF98105D24FBBF0B00158C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98105C24FBBF0B00158C42 /* AppDelegate.swift */; };
 		EF98105F24FBBF0B00158C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98105E24FBBF0B00158C42 /* SceneDelegate.swift */; };
-		EF98106124FBBF0B00158C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98106024FBBF0B00158C42 /* ViewController.swift */; };
+		EF98106124FBBF0B00158C42 /* SinglePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98106024FBBF0B00158C42 /* SinglePlayerVC.swift */; };
 		EF98106424FBBF0B00158C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98106224FBBF0B00158C42 /* Main.storyboard */; };
 		EF98106624FBBF1E00158C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF98106524FBBF1E00158C42 /* Assets.xcassets */; };
 		EF98106924FBBF1E00158C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98106724FBBF1E00158C42 /* LaunchScreen.storyboard */; };
 		EF98107424FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98107324FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift */; };
+		EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98107E24FBC81000158C42 /* MultiplayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 		EF98105924FBBF0B00158C42 /* VCCompositionWithStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCCompositionWithStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF98105C24FBBF0B00158C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF98105E24FBBF0B00158C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF98106024FBBF0B00158C42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF98106024FBBF0B00158C42 /* SinglePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerVC.swift; sourceTree = "<group>"; };
 		EF98106324FBBF0B00158C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF98106524FBBF1E00158C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF98106824FBBF1E00158C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		EF98106F24FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCCompositionWithStoryboardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF98107324FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCompositionWithStoryboardsTests.swift; sourceTree = "<group>"; };
 		EF98107524FBBF1E00158C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF98107E24FBC81000158C42 /* MultiplayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 			children = (
 				EF98105C24FBBF0B00158C42 /* AppDelegate.swift */,
 				EF98105E24FBBF0B00158C42 /* SceneDelegate.swift */,
-				EF98106024FBBF0B00158C42 /* ViewController.swift */,
+				EF98106024FBBF0B00158C42 /* SinglePlayerVC.swift */,
+				EF98107E24FBC81000158C42 /* MultiplayerVC.swift */,
 				EF98106224FBBF0B00158C42 /* Main.storyboard */,
 				EF98106524FBBF1E00158C42 /* Assets.xcassets */,
 				EF98106724FBBF1E00158C42 /* LaunchScreen.storyboard */,
@@ -200,9 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF98106124FBBF0B00158C42 /* ViewController.swift in Sources */,
+				EF98106124FBBF0B00158C42 /* SinglePlayerVC.swift in Sources */,
 				EF98105D24FBBF0B00158C42 /* AppDelegate.swift in Sources */,
 				EF98105F24FBBF0B00158C42 /* SceneDelegate.swift in Sources */,
+				EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
