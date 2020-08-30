@@ -26,4 +26,15 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
         
         XCTAssertTrue(vc.nameLabel?.text == name, "Expected name \(name) got \(vc.name!)")
     }
+    
+    func test_playerOneStoryboard_scoreSetter_updatesScoreLabel() {
+         let storyboard = UIStoryboard(name: "PlayerOne", bundle: nil)
+         let vc = storyboard.instantiateInitialViewController() as! PlayerScoreViewController
+         _ = vc.view
+         
+         let score = "a score"
+         vc.score = name
+         
+        XCTAssertTrue(vc.scoreLabel?.text == name, "Expected name \(score) got \(String(describing: vc.scoreLabel?.text))")
+     }
 }
