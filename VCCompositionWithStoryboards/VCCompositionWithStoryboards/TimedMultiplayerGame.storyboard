@@ -18,7 +18,7 @@
         <!--Time Game-->
         <scene sceneID="GKq-AO-7oc">
             <objects>
-                <viewController id="Rks-xd-16m" customClass="MultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rks-xd-16m" customClass="TimedMultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q1R-t3-KJ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

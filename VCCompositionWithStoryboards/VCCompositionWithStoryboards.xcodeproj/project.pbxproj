@@ -24,6 +24,7 @@
 		EF98108D24FBD88500158C42 /* TimedMultiplayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */; };
 		EF98108F24FBD8AA00158C42 /* TimeBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */; };
 		EF98109124FBD92C00158C42 /* TimeBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98109024FBD92C00158C42 /* TimeBarViewController.swift */; };
+		EF98109324FBE1D900158C42 /* TimedMultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98109224FBE1D900158C42 /* TimedMultiplayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimedMultiplayerGame.storyboard; sourceTree = "<group>"; };
 		EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeBar.storyboard; sourceTree = "<group>"; };
 		EF98109024FBD92C00158C42 /* TimeBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBarViewController.swift; sourceTree = "<group>"; };
+		EF98109224FBE1D900158C42 /* TimedMultiplayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedMultiplayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				EF98108024FBCB8500158C42 /* PlayerOne.storyboard */,
 				EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */,
 				EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */,
+				EF98109224FBE1D900158C42 /* TimedMultiplayerVC.swift */,
 				EF98108C24FBD88500158C42 /* TimedMultiplayerGame.storyboard */,
 				EF98108E24FBD8AA00158C42 /* TimeBar.storyboard */,
 				EF98109024FBD92C00158C42 /* TimeBarViewController.swift */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF98106124FBBF0B00158C42 /* SinglePlayerVC.swift in Sources */,
+				EF98109324FBE1D900158C42 /* TimedMultiplayerVC.swift in Sources */,
 				EF98105D24FBBF0B00158C42 /* AppDelegate.swift in Sources */,
 				EF98105F24FBBF0B00158C42 /* SceneDelegate.swift in Sources */,
 				EF98108524FBCE6300158C42 /* PlayerScoreViewController.swift in Sources */,
