@@ -15,7 +15,7 @@
             </objects>
             <point key="canvasLocation" x="75" y="-196"/>
         </scene>
-        <!--Single PlayerVC-->
+        <!--Single Player-->
         <scene sceneID="ogg-su-T87">
             <objects>
                 <viewController id="2yf-RZ-YEq" customClass="SinglePlayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,6 +41,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jgh-sb-nSt"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Single Player" id="bIs-k8-tmB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDR-4m-wmz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

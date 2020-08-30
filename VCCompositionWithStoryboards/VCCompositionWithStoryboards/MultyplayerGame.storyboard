@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="248" y="-225"/>
         </scene>
-        <!--MultiplayerVC-->
+        <!--Multiplayer-->
         <scene sceneID="tVe-La-Ovr">
             <objects>
                 <viewController id="Axt-kc-cRL" customClass="MultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,6 +61,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vRl-ck-0rQ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Multiplayer" id="ehj-Iw-i0G"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfY-WW-SUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
