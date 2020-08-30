@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WsR-fr-ZUW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayerOne-->
+        <scene sceneID="wTh-W1-1mi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerOne" id="ezg-iH-gRk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4G9-4m-HIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="-223"/>
+        </scene>
+        <!--PlayerTwo-->
+        <scene sceneID="CPY-wh-iba">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerTwo" id="yZX-2F-F6t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQO-bA-wgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-225"/>
+        </scene>
+        <!--MultiplayerVC-->
+        <scene sceneID="LWF-bJ-MnY">
+            <objects>
+                <viewController id="WsR-fr-ZUW" customClass="MultiplayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oXr-bR-tlm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pug-aw-4NB">
+                                <rect key="frame" x="234" y="0.0" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="di0-yD-QbF"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="yZX-2F-F6t" kind="embed" id="2RG-fN-yaE"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-K7-K64">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="ejY-TE-zaR"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ezg-iH-gRk" kind="embed" id="wh9-oO-vzk"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pug-aw-4NB" firstAttribute="top" secondItem="oXr-bR-tlm" secondAttribute="top" id="Dgd-BM-uBF"/>
+                            <constraint firstItem="GwR-K7-K64" firstAttribute="leading" secondItem="oXr-bR-tlm" secondAttribute="leading" id="ncM-Du-Vwg"/>
+                            <constraint firstAttribute="bottom" secondItem="Pug-aw-4NB" secondAttribute="bottom" id="oKu-9Z-pbT"/>
+                            <constraint firstItem="Pug-aw-4NB" firstAttribute="trailing" secondItem="oXr-bR-tlm" secondAttribute="trailing" id="obR-PN-SON"/>
+                            <constraint firstItem="GwR-K7-K64" firstAttribute="top" secondItem="oXr-bR-tlm" secondAttribute="top" id="vM0-h3-FGU"/>
+                            <constraint firstAttribute="bottom" secondItem="GwR-K7-K64" secondAttribute="bottom" id="wAg-h0-fC6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dmk-qj-GZ8"/>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="65"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dO0-ih-6Nc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="-71"/>
+        </scene>
+    </scenes>
+</document>

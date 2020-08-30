@@ -20,6 +20,7 @@
 		EF98108524FBCE6300158C42 /* PlayerScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */; };
 		EF98108724FBCFF900158C42 /* SinglePlayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108624FBCFF900158C42 /* SinglePlayerGame.storyboard */; };
 		EF98108924FBD23F00158C42 /* MultyplayerGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */; };
+		EF98108B24FBD56900158C42 /* MultiplayerScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreViewController.swift; sourceTree = "<group>"; };
 		EF98108624FBCFF900158C42 /* SinglePlayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SinglePlayerGame.storyboard; sourceTree = "<group>"; };
 		EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultyplayerGame.storyboard; sourceTree = "<group>"; };
+		EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiplayerScore.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				EF98108624FBCFF900158C42 /* SinglePlayerGame.storyboard */,
 				EF98108024FBCB8500158C42 /* PlayerOne.storyboard */,
 				EF98108824FBD23F00158C42 /* MultyplayerGame.storyboard */,
+				EF98108A24FBD56900158C42 /* MultiplayerScore.storyboard */,
 				EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */,
 				EF98108224FBCD7300158C42 /* PlayerTwo.storyboard */,
 				EF98106524FBBF1E00158C42 /* Assets.xcassets */,
@@ -204,6 +207,7 @@
 				EF98106624FBBF1E00158C42 /* Assets.xcassets in Resources */,
 				EF98108124FBCB8500158C42 /* PlayerOne.storyboard in Resources */,
 				EF98106424FBBF0B00158C42 /* Main.storyboard in Resources */,
+				EF98108B24FBD56900158C42 /* MultiplayerScore.storyboard in Resources */,
 				EF98108324FBCD7300158C42 /* PlayerTwo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
