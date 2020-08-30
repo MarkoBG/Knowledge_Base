@@ -15,6 +15,7 @@
 		EF98106924FBBF1E00158C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98106724FBBF1E00158C42 /* LaunchScreen.storyboard */; };
 		EF98107424FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98107324FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift */; };
 		EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98107E24FBC81000158C42 /* MultiplayerVC.swift */; };
+		EF98108124FBCB8500158C42 /* PlayerOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108024FBCB8500158C42 /* PlayerOne.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EF98107324FBBF1E00158C42 /* VCCompositionWithStoryboardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCompositionWithStoryboardsTests.swift; sourceTree = "<group>"; };
 		EF98107524FBBF1E00158C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF98107E24FBC81000158C42 /* MultiplayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
+		EF98108024FBCB8500158C42 /* PlayerOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerOne.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				EF98106024FBBF0B00158C42 /* SinglePlayerVC.swift */,
 				EF98107E24FBC81000158C42 /* MultiplayerVC.swift */,
 				EF98106224FBBF0B00158C42 /* Main.storyboard */,
+				EF98108024FBCB8500158C42 /* PlayerOne.storyboard */,
 				EF98106524FBBF1E00158C42 /* Assets.xcassets */,
 				EF98106724FBBF1E00158C42 /* LaunchScreen.storyboard */,
 				EF98106A24FBBF1E00158C42 /* Info.plist */,
@@ -185,6 +188,7 @@
 			files = (
 				EF98106924FBBF1E00158C42 /* LaunchScreen.storyboard in Resources */,
 				EF98106624FBBF1E00158C42 /* Assets.xcassets in Resources */,
+				EF98108124FBCB8500158C42 /* PlayerOne.storyboard in Resources */,
 				EF98106424FBBF0B00158C42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
