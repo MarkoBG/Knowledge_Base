@@ -11,14 +11,14 @@ import XCTest
 
 class PlayerScoreViewControllerStoryboardTests: XCTestCase {
     
-    let storyboard = UIStoryboard(name: "PlayerOne", bundle: nil)
+    // MARK: - PlayerOne Storyboard
     
     func test_playerOneStoryboardInitialViewController_isPlayerScoreViewController() {
-        XCTAssertTrue(storyboard.instantiateInitialViewController() is PlayerScoreViewController)
+        XCTAssertTrue(makePlayerOneStoryboard().instantiateInitialViewController() is PlayerScoreViewController)
     }
     
     func test_playerOneStoryboard_nameSetter_updatesNameLabel() {
-        let vc = makePlayerScoreViewController()
+        let vc = makePlayerScoreViewController(storyboard: makePlayerOneStoryboard())
         
         let name = "Test"
         vc.name = name
@@ -27,7 +27,7 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
     }
     
     func test_playerOneStoryboard_scoreSetter_updatesScoreLabel() {
-         let vc = makePlayerScoreViewController()
+         let vc = makePlayerScoreViewController(storyboard: makePlayerOneStoryboard())
          
          let score = "a score"
          vc.score = name
@@ -36,7 +36,12 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
      }
     
     // MARK: - Helpers
-    private func makePlayerScoreViewController() -> PlayerScoreViewController {
+    
+    private func makePlayerOneStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "PlayerOne", bundle: nil)
+    }
+    
+    private func makePlayerScoreViewController(storyboard: UIStoryboard) -> PlayerScoreViewController {
         let vc = storyboard.instantiateInitialViewController() as! PlayerScoreViewController
         _ = vc.view
         return vc
