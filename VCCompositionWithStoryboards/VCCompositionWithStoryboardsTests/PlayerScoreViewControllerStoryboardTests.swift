@@ -35,10 +35,38 @@ class PlayerScoreViewControllerStoryboardTests: XCTestCase {
         XCTAssertTrue(vc.scoreLabel?.text == name, "Expected name \(score) got \(String(describing: vc.scoreLabel?.text))")
      }
     
+    // MARK: - PlayerTwo Storyboard
+    
+    func test_playerTwoStoryboardInitialViewController_isPlayerScoreViewController() {
+        XCTAssertTrue(makePlayerTwoStoryboard().instantiateInitialViewController() is PlayerScoreViewController)
+    }
+    
+    func test_playerTwoStoryboard_nameSetter_updatesNameLabel() {
+        let vc = makePlayerScoreViewController(storyboard: makePlayerTwoStoryboard())
+        
+        let name = "Test"
+        vc.name = name
+        
+        XCTAssertTrue(vc.nameLabel?.text == name, "Expected name \(name) got \(vc.name!)")
+    }
+    
+    func test_playerTwoStoryboard_scoreSetter_updatesScoreLabel() {
+         let vc = makePlayerScoreViewController(storyboard: makePlayerTwoStoryboard())
+         
+         let score = "a score"
+         vc.score = name
+         
+        XCTAssertTrue(vc.scoreLabel?.text == name, "Expected name \(score) got \(String(describing: vc.scoreLabel?.text))")
+     }
+    
     // MARK: - Helpers
     
     private func makePlayerOneStoryboard() -> UIStoryboard {
         return UIStoryboard(name: "PlayerOne", bundle: nil)
+    }
+    
+    private func makePlayerTwoStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "PlayerTwo", bundle: nil)
     }
     
     private func makePlayerScoreViewController(storyboard: UIStoryboard) -> PlayerScoreViewController {

@@ -55,8 +55,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="65"/>
                     <connections>
-                        <outlet property="nameLabel" destination="775-Yx-i5c" id="BeM-7k-Naj"/>
-                        <outlet property="scoreLabel" destination="2zR-YS-6tX" id="4dU-IF-cll"/>
+                        <outlet property="nameLabel" destination="775-Yx-i5c" id="U2n-EV-p6e"/>
+                        <outlet property="scoreLabel" destination="2zR-YS-6tX" id="zxd-jN-ghD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11r-BZ-jcd" sceneMemberID="firstResponder"/>
