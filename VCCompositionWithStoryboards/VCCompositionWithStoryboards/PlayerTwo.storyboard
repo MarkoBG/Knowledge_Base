@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Single PlayerVC-->
+        <!--Player Score View Controller-->
         <scene sceneID="2Jw-kD-cQ5">
             <objects>
-                <viewController id="opa-dC-GVQ" customClass="SinglePlayerVC" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="opa-dC-GVQ" customClass="PlayerScoreViewController" customModule="VCCompositionWithStoryboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Obn-Ff-skD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,10 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="65"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="775-Yx-i5c" id="BeM-7k-Naj"/>
+                        <outlet property="scoreLabel" destination="2zR-YS-6tX" id="4dU-IF-cll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11r-BZ-jcd" sceneMemberID="firstResponder"/>
             </objects>

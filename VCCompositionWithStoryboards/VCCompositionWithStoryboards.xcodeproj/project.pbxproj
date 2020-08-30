@@ -17,6 +17,7 @@
 		EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98107E24FBC81000158C42 /* MultiplayerVC.swift */; };
 		EF98108124FBCB8500158C42 /* PlayerOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108024FBCB8500158C42 /* PlayerOne.storyboard */; };
 		EF98108324FBCD7300158C42 /* PlayerTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF98108224FBCD7300158C42 /* PlayerTwo.storyboard */; };
+		EF98108524FBCE6300158C42 /* PlayerScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EF98107E24FBC81000158C42 /* MultiplayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
 		EF98108024FBCB8500158C42 /* PlayerOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerOne.storyboard; sourceTree = "<group>"; };
 		EF98108224FBCD7300158C42 /* PlayerTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerTwo.storyboard; sourceTree = "<group>"; };
+		EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				EF98107E24FBC81000158C42 /* MultiplayerVC.swift */,
 				EF98106224FBBF0B00158C42 /* Main.storyboard */,
 				EF98108024FBCB8500158C42 /* PlayerOne.storyboard */,
+				EF98108424FBCE6300158C42 /* PlayerScoreViewController.swift */,
 				EF98108224FBCD7300158C42 /* PlayerTwo.storyboard */,
 				EF98106524FBBF1E00158C42 /* Assets.xcassets */,
 				EF98106724FBBF1E00158C42 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 				EF98106124FBBF0B00158C42 /* SinglePlayerVC.swift in Sources */,
 				EF98105D24FBBF0B00158C42 /* AppDelegate.swift in Sources */,
 				EF98105F24FBBF0B00158C42 /* SceneDelegate.swift in Sources */,
+				EF98108524FBCE6300158C42 /* PlayerScoreViewController.swift in Sources */,
 				EF98107F24FBC81000158C42 /* MultiplayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

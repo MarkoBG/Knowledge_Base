@@ -10,7 +10,7 @@ import UIKit
 
 class SinglePlayerVC: UIViewController {
     
-    @IBOutlet private weak var player: PlayerView?
+    @IBOutlet private weak var player: PlayerScoreViewController?
 
 }
 
