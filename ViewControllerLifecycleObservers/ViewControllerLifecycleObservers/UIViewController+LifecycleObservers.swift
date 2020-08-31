@@ -11,6 +11,9 @@ import UIKit
 
 extension UIViewController {
     func onViewWillAppear(_ callback: () -> Void) {
-        addChild(UIViewController())
+        let observer = UIViewController()
+        addChild(observer)
+        view.addSubview(observer.view)
+        observer.didMove(toParent: self)
     }
 }
