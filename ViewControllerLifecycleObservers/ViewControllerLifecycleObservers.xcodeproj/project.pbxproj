@@ -11,6 +11,13 @@
 		EF7DBC5124FD82650069FEFE /* ViewControllerLifecycleObserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DBC5024FD82650069FEFE /* ViewControllerLifecycleObserversTests.swift */; };
 		EF7DBC5324FD82650069FEFE /* ViewControllerLifecycleObservers.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7DBC4524FD82640069FEFE /* ViewControllerLifecycleObservers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF7DBC5D24FD83530069FEFE /* UIViewController+LifecycleObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DBC5C24FD83530069FEFE /* UIViewController+LifecycleObservers.swift */; };
+		EF7DBC6524FD98050069FEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DBC6424FD98050069FEFE /* AppDelegate.swift */; };
+		EF7DBC6724FD98050069FEFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DBC6624FD98050069FEFE /* SceneDelegate.swift */; };
+		EF7DBC6E24FD980C0069FEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7DBC6D24FD980C0069FEFE /* Assets.xcassets */; };
+		EF7DBC7124FD980C0069FEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7DBC6F24FD980C0069FEFE /* LaunchScreen.storyboard */; };
+		EF7DBC7C24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DBC7B24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.swift */; };
+		EF7DBC8524FD98B10069FEFE /* ViewControllerLifecycleObservers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7DBC4224FD82640069FEFE /* ViewControllerLifecycleObservers.framework */; };
+		EF7DBC8624FD98B10069FEFE /* ViewControllerLifecycleObservers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF7DBC4224FD82640069FEFE /* ViewControllerLifecycleObservers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +28,35 @@
 			remoteGlobalIDString = EF7DBC4124FD82640069FEFE;
 			remoteInfo = ViewControllerLifecycleObservers;
 		};
+		EF7DBC7824FD980C0069FEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7DBC3924FD82640069FEFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7DBC6124FD98050069FEFE;
+			remoteInfo = VCLifecycleObserverSampleApp;
+		};
+		EF7DBC8724FD98B10069FEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7DBC3924FD82640069FEFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7DBC4124FD82640069FEFE;
+			remoteInfo = ViewControllerLifecycleObservers;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF7DBC8924FD98B10069FEFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF7DBC8624FD98B10069FEFE /* ViewControllerLifecycleObservers.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EF7DBC4224FD82640069FEFE /* ViewControllerLifecycleObservers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewControllerLifecycleObservers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +66,15 @@
 		EF7DBC5024FD82650069FEFE /* ViewControllerLifecycleObserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleObserversTests.swift; sourceTree = "<group>"; };
 		EF7DBC5224FD82650069FEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7DBC5C24FD83530069FEFE /* UIViewController+LifecycleObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LifecycleObservers.swift"; sourceTree = "<group>"; };
+		EF7DBC6224FD98050069FEFE /* VCLifecycleObserverSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCLifecycleObserverSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DBC6424FD98050069FEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF7DBC6624FD98050069FEFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF7DBC6D24FD980C0069FEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7DBC7024FD980C0069FEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7DBC7224FD980C0069FEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7DBC7724FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCLifecycleObserverSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7DBC7B24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCLifecycleObserverSampleAppTests.swift; sourceTree = "<group>"; };
+		EF7DBC7D24FD980C0069FEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +93,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7DBC5F24FD98050069FEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DBC8524FD98B10069FEFE /* ViewControllerLifecycleObservers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DBC7424FD980C0069FEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,7 +116,10 @@
 			children = (
 				EF7DBC4424FD82640069FEFE /* ViewControllerLifecycleObservers */,
 				EF7DBC4F24FD82640069FEFE /* ViewControllerLifecycleObserversTests */,
+				EF7DBC6324FD98050069FEFE /* VCLifecycleObserverSampleApp */,
+				EF7DBC7A24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests */,
 				EF7DBC4324FD82640069FEFE /* Products */,
+				EF7DBC8424FD98B10069FEFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +128,8 @@
 			children = (
 				EF7DBC4224FD82640069FEFE /* ViewControllerLifecycleObservers.framework */,
 				EF7DBC4B24FD82640069FEFE /* ViewControllerLifecycleObserversTests.xctest */,
+				EF7DBC6224FD98050069FEFE /* VCLifecycleObserverSampleApp.app */,
+				EF7DBC7724FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +151,34 @@
 				EF7DBC5224FD82650069FEFE /* Info.plist */,
 			);
 			path = ViewControllerLifecycleObserversTests;
+			sourceTree = "<group>";
+		};
+		EF7DBC6324FD98050069FEFE /* VCLifecycleObserverSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DBC6424FD98050069FEFE /* AppDelegate.swift */,
+				EF7DBC6624FD98050069FEFE /* SceneDelegate.swift */,
+				EF7DBC6D24FD980C0069FEFE /* Assets.xcassets */,
+				EF7DBC6F24FD980C0069FEFE /* LaunchScreen.storyboard */,
+				EF7DBC7224FD980C0069FEFE /* Info.plist */,
+			);
+			path = VCLifecycleObserverSampleApp;
+			sourceTree = "<group>";
+		};
+		EF7DBC7A24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7DBC7B24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.swift */,
+				EF7DBC7D24FD980C0069FEFE /* Info.plist */,
+			);
+			path = VCLifecycleObserverSampleAppTests;
+			sourceTree = "<group>";
+		};
+		EF7DBC8424FD98B10069FEFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +231,43 @@
 			productReference = EF7DBC4B24FD82640069FEFE /* ViewControllerLifecycleObserversTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EF7DBC6124FD98050069FEFE /* VCLifecycleObserverSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7DBC7E24FD980C0069FEFE /* Build configuration list for PBXNativeTarget "VCLifecycleObserverSampleApp" */;
+			buildPhases = (
+				EF7DBC5E24FD98050069FEFE /* Sources */,
+				EF7DBC5F24FD98050069FEFE /* Frameworks */,
+				EF7DBC6024FD98050069FEFE /* Resources */,
+				EF7DBC8924FD98B10069FEFE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7DBC8824FD98B10069FEFE /* PBXTargetDependency */,
+			);
+			name = VCLifecycleObserverSampleApp;
+			productName = VCLifecycleObserverSampleApp;
+			productReference = EF7DBC6224FD98050069FEFE /* VCLifecycleObserverSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF7DBC7624FD980C0069FEFE /* VCLifecycleObserverSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7DBC8124FD980C0069FEFE /* Build configuration list for PBXNativeTarget "VCLifecycleObserverSampleAppTests" */;
+			buildPhases = (
+				EF7DBC7324FD980C0069FEFE /* Sources */,
+				EF7DBC7424FD980C0069FEFE /* Frameworks */,
+				EF7DBC7524FD980C0069FEFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7DBC7924FD980C0069FEFE /* PBXTargetDependency */,
+			);
+			name = VCLifecycleObserverSampleAppTests;
+			productName = VCLifecycleObserverSampleAppTests;
+			productReference = EF7DBC7724FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +284,13 @@
 					};
 					EF7DBC4A24FD82640069FEFE = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					EF7DBC6124FD98050069FEFE = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EF7DBC7624FD980C0069FEFE = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EF7DBC6124FD98050069FEFE;
 					};
 				};
 			};
@@ -173,6 +309,8 @@
 			targets = (
 				EF7DBC4124FD82640069FEFE /* ViewControllerLifecycleObservers */,
 				EF7DBC4A24FD82640069FEFE /* ViewControllerLifecycleObserversTests */,
+				EF7DBC6124FD98050069FEFE /* VCLifecycleObserverSampleApp */,
+				EF7DBC7624FD980C0069FEFE /* VCLifecycleObserverSampleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +324,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EF7DBC4924FD82640069FEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DBC6024FD98050069FEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DBC7124FD980C0069FEFE /* LaunchScreen.storyboard in Resources */,
+				EF7DBC6E24FD980C0069FEFE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DBC7524FD980C0069FEFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,6 +365,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7DBC5E24FD98050069FEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DBC6524FD98050069FEFE /* AppDelegate.swift in Sources */,
+				EF7DBC6724FD98050069FEFE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7DBC7324FD980C0069FEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7DBC7C24FD980C0069FEFE /* VCLifecycleObserverSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -219,7 +390,28 @@
 			target = EF7DBC4124FD82640069FEFE /* ViewControllerLifecycleObservers */;
 			targetProxy = EF7DBC4D24FD82640069FEFE /* PBXContainerItemProxy */;
 		};
+		EF7DBC7924FD980C0069FEFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7DBC6124FD98050069FEFE /* VCLifecycleObserverSampleApp */;
+			targetProxy = EF7DBC7824FD980C0069FEFE /* PBXContainerItemProxy */;
+		};
+		EF7DBC8824FD98B10069FEFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7DBC4124FD82640069FEFE /* ViewControllerLifecycleObservers */;
+			targetProxy = EF7DBC8724FD98B10069FEFE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF7DBC6F24FD980C0069FEFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7DBC7024FD980C0069FEFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EF7DBC5424FD82650069FEFE /* Debug */ = {
@@ -431,6 +623,86 @@
 			};
 			name = Release;
 		};
+		EF7DBC7F24FD980C0069FEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = VCLifecycleObserverSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.VCLifecycleObserverSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7DBC8024FD980C0069FEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = VCLifecycleObserverSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.VCLifecycleObserverSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF7DBC8224FD980C0069FEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = VCLifecycleObserverSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.VCLifecycleObserverSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCLifecycleObserverSampleApp.app/VCLifecycleObserverSampleApp";
+			};
+			name = Debug;
+		};
+		EF7DBC8324FD980C0069FEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = VCLifecycleObserverSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.VCLifecycleObserverSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCLifecycleObserverSampleApp.app/VCLifecycleObserverSampleApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +729,24 @@
 			buildConfigurations = (
 				EF7DBC5A24FD82650069FEFE /* Debug */,
 				EF7DBC5B24FD82650069FEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7DBC7E24FD980C0069FEFE /* Build configuration list for PBXNativeTarget "VCLifecycleObserverSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DBC7F24FD980C0069FEFE /* Debug */,
+				EF7DBC8024FD980C0069FEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7DBC8124FD980C0069FEFE /* Build configuration list for PBXNativeTarget "VCLifecycleObserverSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7DBC8224FD980C0069FEFE /* Debug */,
+				EF7DBC8324FD980C0069FEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

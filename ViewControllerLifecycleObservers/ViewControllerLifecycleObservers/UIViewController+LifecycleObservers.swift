@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol UIViewControllerLifecycleObserver {
+public protocol UIViewControllerLifecycleObserver {
     func remove()
 }
 
 extension UIViewController {
     
     @discardableResult
-    func onViewWillAppear(run callback: @escaping () -> Void) -> UIViewControllerLifecycleObserver {
+    public func onViewWillAppear(run callback: @escaping () -> Void) -> UIViewControllerLifecycleObserver {
         
         let observer = ViewControllerLifecycleObserver(viewWillAppearCallback: callback)
         add(observer)
