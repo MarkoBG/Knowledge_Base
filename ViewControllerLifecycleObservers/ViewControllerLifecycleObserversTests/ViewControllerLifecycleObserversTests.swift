@@ -41,4 +41,20 @@ class ViewControllerLifecycleObserversTests: XCTestCase {
         XCTAssertEqual(observer?.view.isHidden, true)
     }
 
+    func test_viewWillAppearObserver_firesCallback() {
+        
+        let sut = UIViewController()
+        
+        var callCount = 0
+        sut.onViewWillAppear { callCount += 1 }
+        
+        let observer = sut.children.first
+        XCTAssertEqual(callCount,0)
+        
+        observer?.viewWillAppear(false)
+        XCTAssertEqual(callCount,1)
+        
+        observer?.viewWillAppear(false)
+        XCTAssertEqual(callCount,2)
+    }
 }
