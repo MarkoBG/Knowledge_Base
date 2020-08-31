@@ -11,7 +11,10 @@ import UIKit
 
 extension UIViewController {
     func onViewWillAppear(_ callback: @escaping () -> Void) {
-        let observer = ViewControllerLifecycleObserver(viewWillAppearCallback: callback)
+        add(ViewControllerLifecycleObserver(viewWillAppearCallback: callback))
+    }
+    
+    private func add(_ observer: UIViewController) {
         addChild(observer)
         observer.view.isHidden = true
         view.addSubview(observer.view)
