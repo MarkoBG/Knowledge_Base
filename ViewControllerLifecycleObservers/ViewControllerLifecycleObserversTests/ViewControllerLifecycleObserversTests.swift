@@ -57,4 +57,12 @@ class ViewControllerLifecycleObserversTests: XCTestCase {
         observer?.viewWillAppear(false)
         XCTAssertEqual(callCount,2)
     }
+    
+    func test_viewWillAppearObserver_isRemovedFromParent() {
+        let sut = UIViewController()
+        
+        sut.onViewWillAppear(run: {}).remove()
+        
+        XCTAssertEqual(sut.children.count, 0)
+    }
 }

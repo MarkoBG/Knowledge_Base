@@ -8,10 +8,19 @@
 
 import UIKit
 
+protocol UIViewControllerLifecycleObserver {
+    func remove()
+}
 
 extension UIViewController {
-    func onViewWillAppear(_ callback: @escaping () -> Void) {
-        add(ViewControllerLifecycleObserver(viewWillAppearCallback: callback))
+    
+    @discardableResult
+    func onViewWillAppear(run callback: @escaping () -> Void) -> UIViewControllerLifecycleObserver {
+        
+        let observer = ViewControllerLifecycleObserver(viewWillAppearCallback: callback)
+        add(observer)
+        
+        return observer
     }
     
     private func add(_ observer: UIViewController) {
@@ -22,7 +31,7 @@ extension UIViewController {
     }
 }
 
-private class ViewControllerLifecycleObserver: UIViewController {
+private class ViewControllerLifecycleObserver: UIViewController, UIViewControllerLifecycleObserver {
     
     private var viewWillAppearCallback: () -> Void = {}
     
@@ -35,5 +44,10 @@ private class ViewControllerLifecycleObserver: UIViewController {
         super.viewWillAppear(animated)
         
         viewWillAppearCallback()
+    }
+    
+    func remove() {
+        willMove(toParent: nil)
+        removeFromParent()
     }
 }
