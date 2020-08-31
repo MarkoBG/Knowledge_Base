@@ -30,5 +30,15 @@ class ViewControllerLifecycleObserversTests: XCTestCase {
         let observer = sut.children.first
         XCTAssertEqual(observer?.view.superview, sut.view)
     }
+    
+    func test_viewWillAppearObserverView_isInvisible() {
+        
+        let sut = UIViewController()
+        
+        sut.onViewWillAppear {}
+        
+        let observer = sut.children.first
+        XCTAssertEqual(observer?.view.isHidden, true)
+    }
 
 }

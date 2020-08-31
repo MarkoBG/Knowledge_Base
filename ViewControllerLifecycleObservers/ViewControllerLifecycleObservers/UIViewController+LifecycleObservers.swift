@@ -13,6 +13,7 @@ extension UIViewController {
     func onViewWillAppear(_ callback: () -> Void) {
         let observer = UIViewController()
         addChild(observer)
+        observer.view.isHidden = true
         view.addSubview(observer.view)
         observer.didMove(toParent: self)
     }
