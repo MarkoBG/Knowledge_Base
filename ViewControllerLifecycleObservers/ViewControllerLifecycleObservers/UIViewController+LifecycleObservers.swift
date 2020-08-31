@@ -48,6 +48,7 @@ private class ViewControllerLifecycleObserver: UIViewController, UIViewControlle
     
     func remove() {
         willMove(toParent: nil)
+        view.removeFromSuperview()
         removeFromParent()
     }
 }
